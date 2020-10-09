@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/778be6e115.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo" alt="logo">OSLO BEER</a>
+      <div class="nav">
+        <ul class="nav__ul">
+          <li><a href="index.html" class="nav__submenu">Home</a></li>
+          <li><a href="about.html" class="nav__submenu">About</a></li>
+          <li><a href="checkout.html" class="nav__submenu">Checkout</a></li>
+          <li><a href="contact.html" class="nav__submenu">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main_checkout">
+      <div class="wrapper_checkout">
+        <div class="inner_checkout">
+          <form action="">
+            <h3 class="h3_checkout">Checkout</h3>
+
+            <label class="form-group">
+              <input type="text" class="form-control" required />
+              <span>Your Name</span>
+              <span class="border"></span>
+            </label>
+            <label class="form-group">
+              <input type="text" class="form-control" required />
+              <span for="">Your Address</span>
+              <span class="border"></span>
+            </label>
+            <label class="form-group">
+              <input type="number" class="form-control" required />
+              <span for="">Phone Number</span>
+              <span class="border"></span>
+            </label>
+            <label class="form-group">
+              <input type="text" class="form-control" required />
+              <span for="">Your Mail</span>
+              <span class="border"></span>
+            </label>
+
+            <button id="button" class="button_checkout">
+              Proceed To Payment
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="product_img">
+        <img class="beer_checkout" src="img/beer_checkout.png" alt="beer" />
+        <div class="product_info">
+          <h4>Your Cart:</h4>
+          <ul>
+            <li class="item">1x beer @ 399kr.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="payment_popup" id="payment_popup">
+        <div class="popup_content">
+          <div class="close">
+            <i class="fas fa-times" id="close"></i>
+          </div>
+          <i class="fab fa-cc-visa"></i>
+          <h3 class="h3_popup">Payment</h3>
+
+          <form action="" class="form_payment_popup">
+            <label class="form-group">
+              <input type="number" class="form-control" required />
+              <span>Card Number</span>
+              <span class="border"></span>
+            </label>
+            <label class="form-group">
+              <input type="text" class="form-control" required />
+              <span for="">Exp Date</span>
+              <span class="border"></span>
+            </label>
+            <label class="form-group">
+              <input type="number" class="form-control" required />
+              <span for="">CCV</span>
+              <span class="border"></span>
+            </label>
+            <button class="button_checkout">Confirm Payment</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__icon">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </footer>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
